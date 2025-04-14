@@ -1,0 +1,71 @@
+✅ Completed Features:
+URL Shortening
+
+Generates short URLs using nanoid.
+
+Allows custom aliases for personalized short links.
+
+Checks for duplicate aliases before saving.
+
+QR Code Generation
+
+Generates a QR code for each short URL.
+
+Stores QR codes in the database.
+
+Provides an API endpoint to fetch QR codes.
+
+URL Redirection
+
+Redirects users to the original URL when they visit a short link.
+
+Increments click count for analytics.
+
+Stores visit history (timestamps) for tracking.
+
+Expiration Handling
+
+Allows setting an expiration date for short URLs.
+
+Returns a 410 Gone status if a URL is expired.
+
+Analytics & Stats
+
+Provides an endpoint to get stats for a short URL.
+
+Tracks total clicks and visit history.
+
+⚡ Tech Stack Used:
+Node.js & Express.js (Backend Framework)
+
+MongoDB & Mongoose (Database & Schema Management)
+
+nanoid (For generating unique short IDs)
+
+QRCode (For generating QR codes)
+
+dotenv (For managing environment variables)
+
+📌 Next Steps:
+Master React (Your current goal)
+
+Build the frontend for LinkZap using React + Tailwind CSS.
+
+Connect the frontend to the backend via API calls.
+
+Deploy LinkZap (MongoDB Atlas + Vercel/Render).
+
+
+
+Package	Purpose
+express	Backend framework for handling routes and requests.
+mongoose	Helps interact with MongoDB easily using schemas.
+dotenv	Loads environment variables from a .env file.
+cors	Enables Cross-Origin Resource Sharing (allows frontend to talk to backend).
+shortid	Generates short, unique IDs (for URL shortening).
+jsonwebtoken	Creates & verifies JWT tokens for user authentication.
+bcryptjs	Hashes passwords securely before storing them in the database.
+helmet	Secures the Express app by setting HTTP headers.
+morgan	Logs incoming requests to the server (useful for debugging).
+rate-limit	Prevents API abuse by limiting the number of requests per user.
+validator	Validates user input (e.g., email, URLs) before storing in the database.
