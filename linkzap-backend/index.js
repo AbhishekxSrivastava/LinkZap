@@ -16,7 +16,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/url", urlRoutes);
 
 app.get("/", (req, res) => {
-  res.send("LinkZap is Connected O Successfully!!!");
+  res.send("LinkZap is Connected Successfully!!!");
 });
 
 const PORT = process.env.PORT || 5000;
